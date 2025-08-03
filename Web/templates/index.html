@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrackAuth - IA de Ataque</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>CrackAuth - IA de Ataque</h1>
+        <form id="attack-form">
+            <label for="url">URL del sitio:</label>
+            <input type="text" id="url" name="url" required placeholder="Ej. https://example.com/wp-login.php">
+
+            <label for="usernames">Usuario (opcional):</label>
+            <input type="text" id="usernames" name="usernames" placeholder="Usuario para probar">
+
+            <label for="passwords">Contraseña (opcional):</label>
+            <input type="text" id="passwords" name="passwords" placeholder="Contraseña para probar">
+
+            <button type="submit">Iniciar Ataque</button>
+        </form>
+
+        <div id="results"></div>
+        <div id="logs">
+            <h2>Logs de Intentos:</h2>
+            <div id="attempts"></div>
+        </div>
+
+        <!-- Botón para detener el ataque -->
+        <button id="stop-attack">Detener Ataque</button>
+
+        <!-- Botón para limpiar la consola y los logs -->
+        <form action="/clear_logs" method="post" style="margin-top: 10px;">
+            <input type="submit" value="Limpiar Consola y Logs"
+                style="background-color: red; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;">
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/socket.io-client@4.0.1/dist/socket.io.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
