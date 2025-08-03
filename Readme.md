@@ -29,3 +29,15 @@ Inicia el ataque y observa los logs en tiempo real
 Puedes detener el ataque o limpiar la consola
 
 ⚠ Solo para fines educativos y en entornos de prueba
+
+
+## 🛡️ Licencia
+
+Este proyecto está licenciado bajo la [Creative Commons BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).  
+Eso significa que puedes usarlo, compartirlo y modificarlo libremente **siempre y cuando:**
+
+- Des crédito a su autor original: **Rubén (@Codeveloperr)**.
+- No lo uses con fines comerciales.
+- Cualquier versión modificada también se comparta bajo la misma licencia.
+
+Cualquier uso comercial sin autorización expresa está **prohibido**.
