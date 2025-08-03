@@ -1,4 +1,4 @@
-# CrackAuth - IA de Ataque v1.0.0
+# HACK IA - IA de Ataque v1.0.0
 
 Este proyecto es una herramienta educativa que simula ataques de fuerza bruta a formularios de login. Utiliza Flask, Socket.IO y Selenium para automatizar pruebas de contraseñas.
 
@@ -13,8 +13,8 @@ Este proyecto es una herramienta educativa que simula ataques de fuerza bruta a 
 ## Instalación
 
 ```bash
-git clone https://github.com/tu_usuario/CrackAuth.git
-cd CrackAuth
+git clone https://github.com/Codeveloperr/HACKAI
+cd HACKIA
 python -m venv venv
 source venv/bin/activate  # En Windows: .\venv\Scripts\activate
 pip install -r requirements.txt
